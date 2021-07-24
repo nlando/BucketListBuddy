@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bucket list Buddy</title>
+</head>
+<body >
+  <nav>
+    <ul>
+      <li><a href="/trips/profile">Your Profile</a></li>
+      <li><a href="/trips">Explore Bucket Lists</a></li>
+    </ul>
+  </nav>
+  <h2>Enter a New Flight</h2>
+    <form action="/trips" method="POST">
+        <label>
+            Trip:
+            <input type="text" name="title"/>
+        </label>
+        <label>
+            Location:
+            <input type="text" name="location"/>
+        </label>
+        <label>
+            Date:
+            <input type="datetime-local" name="eventDate" />
+        </label>
+        <label>
+            Activites Include:
+            <input type="text" name="activites"/>
+        </label>
+        <input type="submit" value="Add Trip" />
+    </form>
+	</body>
+</html>
