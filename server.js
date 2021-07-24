@@ -24,8 +24,8 @@ app.use((req, res, next) => {
 //Server uses indexRouter at url of /
 app.use('/', indexRouter);
 
-//Server uses flistsRouter at url of /lists
-app.use('/lists', listsRouter);
+//Server uses tripsRouter at url of /trips
+app.use('/trips', tripsRouter);
 
 const PORT = 4000;
 
