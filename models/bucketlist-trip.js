@@ -13,7 +13,7 @@ const detailsSchema = new Schema (
         title: {type: String, required: true},
         description: String,
         eventGroup: String,
-        bucketList: [bucketListSchema],
+        bucketList: [tripSchema],
     }, {
         timestamps: true
     }
