@@ -1,9 +1,13 @@
 //SERVER.JS
 
-// require(dotenv).config();
+require('dotenv').config();
 
 //Pulling in Express
 const express = require('express');
+
+//Middleware
+const session = require('express-session');
+const passport = require('passport');
 
 //Makes express a variable that can be used
 const app = express();
@@ -19,7 +23,14 @@ const tripsRouter = require('./routes/trips');
 
 app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(session({
+    secret: 'BUCKETlistBUDDY',
+    resave: false,
+    saveUninitialized: true
+  }));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use((req, res, next) => {
     console.log(req.url, res.method);
     next();
