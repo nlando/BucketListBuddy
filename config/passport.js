@@ -28,8 +28,7 @@ passport.use(new GoogleStrategy({
       });
     }
   ));
-  }
-));
+
 
 
 passport.serializeUser(function(user, done) {
