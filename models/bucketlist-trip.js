@@ -23,7 +23,7 @@ const tripSchema = new Schema (
 const detailsSchema = new Schema (
     {
         _id: ObjectId,
-        title: {type: String, required: true};
+        title: {type: String, required: true},
         description: String,
         eventGroup: String,
         bucketList: [bucketListSchema],
