@@ -1,6 +1,6 @@
 //SERVER.JS
 
-require(dotenv).config();
+require('dotenv').config();
 
 //Pulling in Express
 const express = require('express');
