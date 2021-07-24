@@ -1,0 +1,38 @@
+#landing-page{
+    text-align: right;
+    background-color: #F4D5A5;
+    display: block;
+    margin: 35vh 15vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+#beach{
+    border-radius: 4px;
+    width: auto;
+    height: 84vh;
+    display: block;
+    position: absolute;
+    left: 4%;
+    top: 8%;   
+}
+
+#mountains{
+    border-radius: 4px;
+    width: auto;
+    height:59vh;
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 14%;
+}
+
+#night{
+    border-radius: 6px;
+    width: auto;
+    height:41vh;
+    display: block;
+    position: absolute;
+    left: 24%;
+    top: 53%;
+}
