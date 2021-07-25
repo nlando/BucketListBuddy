@@ -33,7 +33,7 @@ function create(req, res){
 //Calling details with find the trip created by the imported model through its ID, then will call function to render 'trips/details', with a title of Trip Detail and show the trip details/activities or ID
 function details(req, res){
     trip.findById(req.params.id, function(err, trip) {
-        res.render('trips/show', {title: 'Trip Activities', trip});
+        res.render('trips/details', {title: 'Trip Activities', trip});
     });
 }
 
@@ -43,4 +43,4 @@ module.exports = {
     new: newTrip,
     create,
     details,
-}
+};

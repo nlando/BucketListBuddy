@@ -20,10 +20,10 @@ const tripsRouter = require('./routes/trips');
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use((req, res, next) => {
-    console.log(req.url, res.method);
-    next();
-});
+// app.use((req, res, next) => {
+//     console.log(req.url, res.method);
+//     next();
+// });
 
 //Server uses indexRouter at url of /
 app.use('/', indexRouter);
