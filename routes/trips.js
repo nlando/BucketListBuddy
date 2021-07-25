@@ -2,7 +2,6 @@
 
 //Pulls in express
 const express = require('express');
-const trips = require('../controllers/trips');
 
 //Creates a variable for expresses router object
 const router = express.Router();
