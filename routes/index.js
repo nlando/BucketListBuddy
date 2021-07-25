@@ -19,6 +19,8 @@ router.get('/', function(req, res) {
     })
 });
 
+// router.get('/', indexControl.index);
+
 //routes for google oath
 router.get('/auth/google', passport.authenticate(
     'google',

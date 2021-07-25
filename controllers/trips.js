@@ -32,10 +32,10 @@ function newTrip(req, res) {
 
 //Calling create will make a new trip out of the 'trip' model required at top, and then will save and then redirect to bucketLists/new
 function create(req, res){
-    const newTrip = new Trip(req.body);
+    const newTrip = new trip(req.body);
     newTrip.save(function(err) {
         if (err) return res.send(err);
-        res.redirect('/trips/new');
+        res.redirect('/trips');
     });
 }
 

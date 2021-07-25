@@ -24,12 +24,13 @@
   <img id="beach" src="/images/vacation.jpg" alt="beach">
 
   <h1 id="landing-header">Bucket List Buddy</h1>
-  <% if (user) { %>
-    <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-  <% } else { %>
-    <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-  <% } %>
-
+  <div id="landing-login">
+    <% if (user) { %>
+      <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+    <% } else { %>
+      <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+    <% } %>
+  </div>
 
 </body>
 </html>
