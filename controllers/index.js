@@ -1,9 +1,10 @@
 //CONTROLLER INDEX
+const User = require('../models/user');
 
 //calling index renders the index (home) page
 function index(req, res, next) {
     User.find({}, function(err, users) {
-     res.render('user/index', {
+     res.render('index', {
       users,
       user: req.user
       });

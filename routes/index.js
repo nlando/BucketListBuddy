@@ -13,7 +13,11 @@ const passport = require('passport');
 const indexControl = require('../controllers/index');
 
 //On plain / URL, get/call index function from index controller
-router.get('/', indexControl.index);
+router.get('/', function(req, res) {
+    res.render('index', {
+        user: req.user,
+    })
+});
 
 //routes for google oath
 router.get('/auth/google', passport.authenticate(
@@ -24,7 +28,7 @@ router.get('/auth/google', passport.authenticate(
   router.get('/oauth2callback', passport.authenticate(
     'google',
     {
-      successRedirect : '/students',
+      successRedirect : '/trips/index',
       failureRedirect : '/'
     }
   ));
