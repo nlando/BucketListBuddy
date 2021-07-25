@@ -3,16 +3,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Poppins:wght@200&display=swap" rel="stylesheet">
   <title>Bucket list Buddy</title>
 </head>
-<body >
-  <nav>
-    <ul>
-      <li><a href="/trips/profile">Your Profile</a></li>
-      <li><a href="/trips">Explore Bucket Lists</a></li>
-    </ul>
-  </nav>
-  <h2>Enter a New Flight</h2>
+<body id="new-body">
+  <div class='nav-stack'>
+    <nav>
+      <ul>
+        <li><a href="/trips/profile">Your Profile</a></li>
+        <li><a href="/trips">Explore Bucket Lists</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class='content-stack'>
+    <h2>Enter Something on Your Bucket List!</h2>
     <form action="/trips" method="POST">
         <label>
             Trip:
@@ -32,5 +39,6 @@
         </label>
         <input type="submit" value="Add Trip" />
     </form>
-	</body>
+  </div>
+</body>
 </html>

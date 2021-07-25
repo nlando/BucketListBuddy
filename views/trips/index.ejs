@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bucket list Buddy</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body >
   <nav>
@@ -22,16 +23,17 @@
         <th>Date:</th>
       </thead>
       <tbody>
-        <% trips.forEach(trip => { %>
+        <% Trips.forEach(trip => { %>
         <tr>
-          <td><%= trip.title %></td>
-          <td><%= trip.location %></td>
-          <td><%= trip.eventDate %></td>
-          <td><a href="/trips/<%= trip._id %>">DETAILS</a></td>
+          <td><%= Trip.title %></td>
+          <td><%= Trip.location %></td>
+          <td><%= Trip.eventDate %></td>
+          <td><a href="/trips/<%= Trip._id %>">DETAILS</a></td>
         </tr>
         <% }) %>
       </tbody>
     </table>
+    <h1>Hi</h1>
   </div>
   </body>
 </html>

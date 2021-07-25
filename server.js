@@ -27,6 +27,7 @@ const tripsRouter = require('./routes/trips');
 
 app.use(express.static('public'));
 app.use(express.json());
+
 app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
@@ -36,10 +37,8 @@ app.use(session({
   }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use((req, res, next) => {
-    console.log(req.url, res.method);
-    next();
 });
+
 
 //Server uses indexRouter at url of /
 app.use('/', indexRouter);
