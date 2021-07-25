@@ -13,6 +13,7 @@ const detailsSchema = new Schema (
         title: {type: String, required: true},
         description: String,
         eventGroup: String,
+
     }, {
         timestamps: true
     }
