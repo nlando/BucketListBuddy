@@ -6,24 +6,28 @@
   <title>Bucket list Buddy</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body >
-  <nav>
-    <ul>
-      <li><a href="/trips/profile">Your Profile</a></li>
-      <li><a href="/trips">Explore Bucket Lists</a></li>
-      <li id="add-trip"><a href="/trips/new">Add To Your Bucket List</a></li>
-    </ul>
-  </nav>
-  <h1>Bucket List Buddy</h1>
-    <section>
-        <div>Trip: </div>
-        <div><%= Trip.title %></div>
-        <div>Location: </div>
-        <div><%= Trip.location %></div>
-        <div>Date: </div>
-        <div><%= Trip.eventDate %></div>
-        <div>Activities Include: </div>
-        <div><%= Trip.activities %></div>
-    </section>
-  </body>
+<body class="body">
+  <div class="nav-stack">
+    <nav>
+      <ul>
+        <li><a href="/trips/profile">Your Profile</a></li>
+        <li><a href="/trips">Explore Bucket Lists</a></li>
+        <li id="add-trip"><a href="/trips/new">Add To Your Bucket List</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content-stack" id="details-content-stack">
+    <h1>Bucket List Buddy</h1>
+      <section>
+          <div>Trip: </div>
+          <div><%= Trip.title %></div>
+          <div>Location: </div>
+          <div><%= Trip.location %></div>
+          <div>Date: </div>
+          <div><%= Trip.eventDate %></div>
+          <div>Activities Include: </div>
+          <div><%= Trip.activities %></div>
+      </section>
+  </div>
+</body>
 </html>

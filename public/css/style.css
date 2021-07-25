@@ -1,10 +1,66 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+} */
+
+/* ALL PAGES */
+
+.body{
+    background: linear-gradient(to right, #fff7e9 0%, #F4D5A5 100%);
+    font-family: 'Poppins', sans-serif; 
+    color: rgb(59, 59, 59);
+}
+
+.nav-stack{
+    color: white;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(255, 255, 255, .8);
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.nav-stack li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 2vh 2vw;
+
+}
+
+a{
+    text-decoration: underline;
+    color: rgb(59, 59, 59);
+}
+
+.nav-stack a:hover{
+    background-color: #F4D5A5;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 2vh 1vw;
+}
+
+.content-stack{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 /* LANDING PAGE */
+
 #landing-page{
     /* background-color: #F4D5A5; */
     background: linear-gradient(to right, #f1e7d6 0%, #F4D5A5 100%);
     text-align: right;
     display: block;
-    margin: 35vh 15vw;
+    margin: 35vh 10vw;
     font-family: 'Poppins', sans-serif;
     font-size: large;
     color: rgb(59, 59, 59);
@@ -23,11 +79,11 @@
 #mountains{
     border-radius: 4px;
     width: auto;
-    height:59vh;
+    height:64vh;
     display: block;
     position: absolute;
-    left: 30%;
-    top: 14%;
+    left: 28%;
+    top: 13%;
 }
 
 #night{
@@ -37,41 +93,58 @@
     display: block;
     position: absolute;
     left: 24%;
-    top: 53%;
+    top: 55%;
 }
 
-/* NEW PAGE */
+/* "NEW" PAGE */
 
-#new-body{
-    /* display: flex; */
-    background: linear-gradient(to right, #f1e7d6 0%, #F4D5A5 100%);
-    font-family: 'Poppins', sans-serif; 
-    color: rgb(59, 59, 59);
-    /* align-items: center; */
+#add-content-stack{
+    position: relative;
+    right: 22%;
+    top: 5%;
 }
 
-.nav-stack{
-    color: white;
-    text-align: center;
-    list-style: none;
+.content-stack form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgba(255, 255, 255, .8);    
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2% 0;
 }
 
-.nav-stack li{
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    margin: 2vh 2vw;
-
+.content-stack input{
+    margin: 4% 0;
 }
 
-a{
-    text-decoration: underline;
-    color: rgb(59, 59, 59);
+#add-new-button{
+    width: 35%;
+    margin: 0 auto;
 }
 
-a:hover{
-    background-color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 2vh 3vw;
+/* #snow{
+    display: flex;
+    flex-flow: column-reverse;
+    
+} */
+
+#snow{  
+    border-radius: 15px;
+    width: auto;
+    height: 54vh;
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 38%;  
+}
+
+#ocean{
+    border-radius: 15px;
+    width: auto;
+    height:67vh;
+    display: block;
+    position: absolute;
+    right: 25%;
+    top: 13%;
 }

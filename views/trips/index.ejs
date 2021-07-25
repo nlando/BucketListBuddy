@@ -23,12 +23,12 @@
         <th>Date:</th>
       </thead>
       <tbody>
-        <% Trips.forEach(trip => { %>
+        <% trips.forEach(trip => { %>
         <tr>
-          <td><%= Trip.title %></td>
-          <td><%= Trip.location %></td>
-          <td><%= Trip.eventDate %></td>
-          <td><a href="/trips/<%= Trip._id %>">DETAILS</a></td>
+          <td><%= trip.title %></td>
+          <td><%= trip.location %></td>
+          <td><%= trip.eventDate %></td>
+          <td><a href="/trips/<%= trip._id %>">DETAILS</a></td>
         </tr>
         <% }) %>
       </tbody>

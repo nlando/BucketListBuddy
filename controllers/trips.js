@@ -1,7 +1,7 @@
 //BUCKETLISTS CONTROLLER
 
 //pulls in bucketlist-trip model
-const Trip = require('../models/bucketlist-trip');
+const trip = require('../models/bucketlist-trip');
 
 //calling index will render all found bucket list trips in the url of bucketLists/index (aka 'bucketLists/')
 
@@ -11,12 +11,16 @@ const Trip = require('../models/bucketlist-trip');
     
 
 function index(req, res){
-    trip.find({}, function (err, trips){
-        if (err) return res.send(err);
-        res.render('trips/index', {
-            trips,
-        });
-    });
+    // trip.find({}, function (err, trips){
+    //     console.log(trips);
+    //     if (err) {
+    //         console.log(err)
+    //      };
+        res.render('trips/index')
+        // , {
+        //     trips,
+        // });
+    // });
 }
 
 //Calling newFlight will render url of flights/new
