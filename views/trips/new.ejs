@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -29,14 +30,28 @@
             Location:
             <input type="text" name="location"/>
         </label>
+
         <label>
             Date:
             <input type="datetime-local" name="eventDate" />
         </label>
         <label>
-            Activites Include:
-           
+            Activities:
+           <input type="text" name="activityType"/>
         </label>
+        <label>
+          Describe Your Bucket List Travel Location:
+          <input type="text" name="description" />
+        </label>
+        <lablel>
+          Where would you want to stay?
+          <select name="stay">
+            <option value="Hotel">Hotel</option>
+            <option value="AirBnB">AirBnB</option>
+            <option value="With Family/Friends">With Family/Friends</option>
+            <option value="Be a Nomad">Be a Nomad</option>
+            </select>
+        </lable>
         <input type="submit" value="Add Trip" />
     </form>
   </div>

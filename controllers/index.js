@@ -6,7 +6,7 @@ function index(req, res, next) {
     User.find({}, function(err, users) {
      res.render('index', {
       users,
-      user: req.user
+    //   user: req.user
       });
    });
   }

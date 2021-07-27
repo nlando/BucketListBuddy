@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bucket list Buddy</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
 </head>
-<body >
-  <nav>
+<body>
+   <nav>
     <ul>
       <li><a href="/trips/profile">Your Profile</a></li>
       <li><a href="/trips">Explore Bucket Lists</a></li>
@@ -23,17 +23,18 @@
         <th>Date:</th>
       </thead>
       <tbody>
-        <% Trips.forEach(trip => { %>
+        <% trip.forEach(trips => { %>
         <tr>
-          <td><%= Trip.title %></td>
-          <td><%= Trip.location %></td>
-          <td><%= Trip.eventDate %></td>
-          <td><a href="/trips/<%= Trip._id %>">DETAILS</a></td>
+          <td><%= trips.title %></td>
+          <td><%= trips.location %></td>
+          <td><%= trips.eventDate %></td>
+          <td><a href="/trips/<%= trips._id %>">DETAILS</a></td>
         </tr>
         <% }) %>
       </tbody>
     </table>
-    <h1>Hi</h1>
-  </div>
-  </body>
+  
+  
+</body>
 </html>
+ 

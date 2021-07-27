@@ -9,20 +9,16 @@ const Schema = mongoose.Schema;
 // Creating a repeatable outline for data mapped to the details of a bucket list event
 const detailsSchema = new Schema (
     {
-        // _id: ObjectId,
-        title: {type: String, required: true},
-        description: String,
-        eventGroup: String,
-
-    }, {
-        timestamps: true
-    }
+        activityType: {type: String},description: {type: String},
+        stay: {type: String,
+        enum: ["Hotel", "AirBnB", "With Family/Friends", "Be a Nomad"]
+        }
+    }, 
 );
 
 //Creating a repeatable outline for data mapped to the bucket list event
 const tripSchema = new Schema (
     {
-        // _id: ObjectId,
         title: {type: String, required: true},
         eventDate: Date,
         location: {type: String, required: true},
@@ -33,9 +29,9 @@ const tripSchema = new Schema (
 );
 
 //declaring variable for the model of tripSchema, calling it "trip"
-const Trip = mongoose.model('Trip', tripSchema);
+ 
 
 //declaring variable for the model of detailsSchema, calling it "details"
 // 
 
-module.exports = Trip;
+module.exports = mongoose.model('Trip', tripSchema);
