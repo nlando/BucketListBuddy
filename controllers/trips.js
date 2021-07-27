@@ -17,8 +17,8 @@ function index(req, res){
     Trip.find({}, function (err, trip){
         if (err) return res.send(err);
         res.render('trips/index', {
-            trip
-            // user: req.user
+            trip,
+            user: req.user
         });
     });
 }
