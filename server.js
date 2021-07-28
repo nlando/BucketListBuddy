@@ -48,7 +48,7 @@ app.use(passport.session());
 app.use('/', indexRouter);
 
 //Server uses tripsRouter at url of /trips
-app.use('/trips', tripsRouter);
+app.use('/', tripsRouter);
 app.use('/user', userRouter);
 //Server listen at localhost://port
 

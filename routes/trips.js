@@ -10,16 +10,13 @@ const router = express.Router();
 const tripsController = require('../controllers/trips');
 
 //On / URL, gets/calls index function from trips controller, which renders all the found flights on the URL of flights/
-router.get('/', tripsController.index);
-
-// //On /new URL, gets/calls 'new' function from trips controller, which renders trips/new with the title of Add Bucket List Trip
-router.get('/new', tripsController.new);
+// router.get('/', tripsController.allTrips);
 
 // //On /:id URL, gets/calls details function from trips controller, which renders trips/details with the found trip --DETAILS PAGE--
-router.get('/:id', tripsController.details);
+router.get('/:id/trips/new', tripsController.newTrip);
 
 // //On / URL, gets/calls create function from the trips controller, which creates and saves from the bucketlist-trip model
-router.post('/', tripsController.create);
+router.post('/:id/trips', tripsController.create);
 
 //exports all the routers from this page
 module.exports = router;

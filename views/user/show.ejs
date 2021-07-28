@@ -8,7 +8,7 @@
 </head>
 <body>
     
-
+    <li><a href="/user/trips/new">Add To Your List</a></li>
 
 <h1>Your Profile</h1>
   <div>
@@ -29,7 +29,28 @@
       </tbody>
     </table>
   <h2>Your Bucket List</h2>
-  
+  <% if (trips.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Location</th>
+          <th>Bucket List Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% trips.forEach(function(t) { %>
+        <tr>
+          <td><%= t.title %></td>
+          <td><%= t.location %></td>
+          <td><%= t.eventDate %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <h5>Needs Tickets</h5>
+    <% } %>
 </div>
 </body>
 </html>
