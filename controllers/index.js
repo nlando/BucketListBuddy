@@ -11,7 +11,7 @@ function index(req, res, next) {
    });
   }
 
-//Exports index function
+
 module.exports = {
     index
 }
