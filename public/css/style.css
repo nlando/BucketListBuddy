@@ -141,7 +141,7 @@ a{
 } */
 
 #snow{  
-    border-radius: 15px;
+    border-radius: 4px;
     width: auto;
     height: 54vh;
     display: block;
@@ -151,7 +151,7 @@ a{
 }
 
 #ocean{
-    border-radius: 15px;
+    border-radius: 4px;
     width: auto;
     height:67vh;
     display: block;
